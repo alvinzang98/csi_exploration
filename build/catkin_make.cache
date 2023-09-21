@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/alvin/Study/csi_rrt/devel -DCMAKE_INSTALL_PREFIX=/home/alvin/Study/csi_rrt/install -G Unix Makefiles

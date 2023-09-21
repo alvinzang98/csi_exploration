@@ -1,0 +1,6 @@
+<launch>
+	<node pkg="wifi_exploration" type="bearing_visualizer" name="bearing_visualizer" output="screen">
+		<param name="map_topic" type="string" value="map"/>
+		<param name="robot_frame" type="string" value="base_link"/>
+	</node>
+</launch>
