@@ -23,6 +23,7 @@ visualization_msgs/MarkerArray (Marker[] markers)
 #include <tf2_ros/transform_listener.h>
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+#include "wifi_exploration/PointArray.h"
 
 nav_msgs::OccupancyGrid mapData;
 visualization_msgs::Marker ap_loc;
@@ -53,8 +54,9 @@ int main(int argc, char **argv)
     ros::Subscriber map_sub = nh.subscribe(map_topic, 100, mapCallback);
     ros::Subscriber rviz_sub = nh.subscribe("/clicked_point", 100, rvizCallback);
     // ros::Subscriber odom_sub = nh.subscribe("/odom", 100, odomCallback);
-    ros::Publisher rviz_pub_ap = nh.advertise<visualization_msgs::Marker>(ns+"/ap_locations",10);
+    ros::Publisher rviz_pub_ap = nh.advertise<visualization_msgs::Marker>(ns+"/rviz_ap",10);
     ros::Publisher rviz_pub_bearing = nh.advertise<visualization_msgs::MarkerArray>(ns+"/AOA_RSSI",10);
+    ros::Publisher ap_loc_pub = nh.advertise<wifi_exploration::PointArray>(ns+"/ap_locations",50);
     ros::Rate rate(100);
     while (mapData.header.seq<1 or mapData.data.size()<1)
     {  
@@ -146,6 +148,7 @@ int main(int argc, char **argv)
         int max_rssi_index = std::max_element(rssi.begin(),rssi.end()) - rssi.begin();
         AOASet.markers[max_rssi_index].scale.x = 0.75;
         rviz_pub_bearing.publish(AOASet);
+        //ap_loc_pub.publish(ap_loc.points);
         ros::spinOnce;
         rate.sleep();
     }
