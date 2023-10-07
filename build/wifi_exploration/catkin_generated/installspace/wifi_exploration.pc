@@ -1,4 +1,4 @@
-prefix=/home/alvin/Study/csi_rrt/install
+prefix=/home/alvin/Study/csi_exploration/install
 
 Name: wifi_exploration
 Description: Description of wifi_exploration

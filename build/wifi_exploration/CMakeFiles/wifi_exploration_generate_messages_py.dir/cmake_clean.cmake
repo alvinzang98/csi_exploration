@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/alvin/Study/csi_rrt/devel/lib/python3/dist-packages/wifi_exploration/msg/_PointArray.py"
-  "/home/alvin/Study/csi_rrt/devel/lib/python3/dist-packages/wifi_exploration/msg/__init__.py"
-  "/home/alvin/Study/csi_rrt/devel/lib/python3/dist-packages/wifi_exploration/msg/_ap_csi.py"
+  "/home/alvin/Study/csi_exploration/devel/lib/python3/dist-packages/wifi_exploration/msg/_PointArray.py"
+  "/home/alvin/Study/csi_exploration/devel/lib/python3/dist-packages/wifi_exploration/msg/__init__.py"
+  "/home/alvin/Study/csi_exploration/devel/lib/python3/dist-packages/wifi_exploration/msg/_ap_csi.py"
   "CMakeFiles/wifi_exploration_generate_messages_py"
 )
 

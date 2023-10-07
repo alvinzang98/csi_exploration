@@ -1,9 +1,12 @@
 file(REMOVE_RECURSE
-  "/home/alvin/Study/csi_rrt/devel/lib/wifi_exploration/local_rrt_detector"
-  "/home/alvin/Study/csi_rrt/devel/lib/wifi_exploration/local_rrt_detector.pdb"
+  "/home/alvin/Study/csi_exploration/devel/lib/wifi_exploration/local_rrt_detector"
+  "/home/alvin/Study/csi_exploration/devel/lib/wifi_exploration/local_rrt_detector.pdb"
   "CMakeFiles/local_rrt_detector.dir/src/functions.cpp.o"
+  "CMakeFiles/local_rrt_detector.dir/src/functions.cpp.o.d"
   "CMakeFiles/local_rrt_detector.dir/src/local_rrt_detector.cpp.o"
+  "CMakeFiles/local_rrt_detector.dir/src/local_rrt_detector.cpp.o.d"
   "CMakeFiles/local_rrt_detector.dir/src/mtrand.cpp.o"
+  "CMakeFiles/local_rrt_detector.dir/src/mtrand.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

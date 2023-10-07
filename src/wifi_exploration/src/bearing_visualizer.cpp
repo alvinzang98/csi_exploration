@@ -67,7 +67,7 @@ int main(int argc, char **argv)
     ROS_INFO_STREAM("The robot frame is "<<base_frame_topic);
     ap_loc.header.frame_id = mapData.header.frame_id;
     ap_loc.header.stamp= ros::Time(0);
-    ap_loc.ns = "markers";
+    ap_loc.ns = "markers";MDR-Z1000
     ap_loc.id = 0;
     ap_loc.type = ap_loc.POINTS; 
     ap_loc.action = ap_loc.ADD;
@@ -80,7 +80,7 @@ int main(int argc, char **argv)
     ap_loc.color.a = 1;
     ap_loc.lifetime = ros::Duration();
 
-    while(ap_loc.points.size()<3)
+    while(ap_loc.points.size()<3)MDR-Z1000
     {
         ros::spinOnce();
         rviz_pub_ap.publish(ap_loc);
@@ -109,6 +109,7 @@ int main(int argc, char **argv)
         }
         botPos.push_back(getBotOdom.transform.translation.x);
         botPos.push_back(getBotOdom.transform.translation.y);
+        wifi_exploration::PointArray ap_loc_array;
         for(unsigned int i = 0;i<ap_loc.points.size();++i)
         {
             visualization_msgs::Marker AOA;
@@ -143,12 +144,12 @@ int main(int argc, char **argv)
             AOASet.markers.push_back(AOA);
 
             rssi.push_back(-10*std::log10(sqrt(pow(d_y,2)+pow(d_x,2))));
-
+            ap_loc_array.points[i] = ap_loc.points[i]; // Change 1
         }
         int max_rssi_index = std::max_element(rssi.begin(),rssi.end()) - rssi.begin();
         AOASet.markers[max_rssi_index].scale.x = 0.75;
         rviz_pub_bearing.publish(AOASet);
-        //ap_loc_pub.publish(ap_loc.points);
+        ap_loc_pub.publish(ap_loc_array); //Change 2
         ros::spinOnce;
         rate.sleep();
     }

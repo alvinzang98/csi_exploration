@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/alvin/Study/csi_rrt/devel/share/common-lisp/ros/wifi_exploration/msg/PointArray.lisp"
-  "/home/alvin/Study/csi_rrt/devel/share/common-lisp/ros/wifi_exploration/msg/ap_csi.lisp"
+  "/home/alvin/Study/csi_exploration/devel/share/common-lisp/ros/wifi_exploration/msg/PointArray.lisp"
+  "/home/alvin/Study/csi_exploration/devel/share/common-lisp/ros/wifi_exploration/msg/ap_csi.lisp"
   "CMakeFiles/wifi_exploration_generate_messages_lisp"
 )
 

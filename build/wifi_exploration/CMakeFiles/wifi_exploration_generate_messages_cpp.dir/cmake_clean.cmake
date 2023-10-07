@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/alvin/Study/csi_rrt/devel/include/wifi_exploration/PointArray.h"
-  "/home/alvin/Study/csi_rrt/devel/include/wifi_exploration/ap_csi.h"
+  "/home/alvin/Study/csi_exploration/devel/include/wifi_exploration/PointArray.h"
+  "/home/alvin/Study/csi_exploration/devel/include/wifi_exploration/ap_csi.h"
   "CMakeFiles/wifi_exploration_generate_messages_cpp"
 )
 

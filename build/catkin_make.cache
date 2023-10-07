@@ -1,2 +1,2 @@
 wifi_exploration
--DCATKIN_DEVEL_PREFIX=/home/alvin/Study/csi_rrt/devel -DCMAKE_INSTALL_PREFIX=/home/alvin/Study/csi_rrt/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/alvin/Study/csi_exploration/devel -DCMAKE_INSTALL_PREFIX=/home/alvin/Study/csi_exploration/install -G Unix Makefiles

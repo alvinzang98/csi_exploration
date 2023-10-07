@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/alvin/Study/csi_rrt/devel/share/gennodejs/ros/wifi_exploration/msg/PointArray.js"
-  "/home/alvin/Study/csi_rrt/devel/share/gennodejs/ros/wifi_exploration/msg/ap_csi.js"
+  "/home/alvin/Study/csi_exploration/devel/share/gennodejs/ros/wifi_exploration/msg/PointArray.js"
+  "/home/alvin/Study/csi_exploration/devel/share/gennodejs/ros/wifi_exploration/msg/ap_csi.js"
   "CMakeFiles/wifi_exploration_generate_messages_nodejs"
 )
 
